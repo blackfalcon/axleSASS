@@ -1,0 +1,695 @@
+// *-------------------------------------------------------------------------------
+// intent of the 'OOCSS' SCSS is that all styles that apply to the OOCSS design patterns are placed here
+// individual element styling will be addressed in element name spaced SCSS files
+// *-------------------------------------------------------------------------------
+// 
+// OOCSS is the cornerstone to the whole solution!  @extend is the glue that makes it happen.
+// Using mixins to manage logic and leveraging OOCSS concepts with @extend is the way to make this work.
+//
+// *-------------------------------------------------------------------------------
+
+
+
+/////// OOCSS gradient color ////////
+// ----------------------------------------------
+// .alpha_color_gradient {
+// 	@include alpha_color_gradient;
+// }
+
+/////// OOCSS gradient color mixins ////////
+
+
+/////// OOCSS color blocks ////////
+// ----------------------------------------------
+
+// .white {
+// 	background-color: $white;
+// }
+// 
+// .alpha_grey {
+// 	background-color: $alpha_grey;
+// }
+// 
+// .bravo_grey {
+// 	background-color: $bravo_grey;
+// }
+// 	
+// .charlie_grey {
+// 	background-color: $charlie_grey;
+// }
+// 
+// .delta_grey {
+// 	background-color: $delta_grey;
+// }
+// 	
+// .echo_grey {
+// 	background-color: $echo_grey;
+// }
+// 	
+// .fox_grey {
+// 	background-color: $fox_grey;
+// }
+// 	
+// .golf_grey {
+// 	background-color: $golf_grey;
+// }	
+// 
+// .hotel_grey {
+// 	background-color: $hotel_grey;
+// }
+// 
+// .india_grey {
+// 	background-color: $india_grey;
+// }
+// 
+// .kilo_grey {
+// 	background-color: $kilo_grey;
+// }
+// 
+// .alpha_color {
+// 	background-color: $alpha_color;
+// }
+// .alpha_color_bravo {
+// 	background-color: $alpha_color_bravo;
+// }
+// .alpha_color_charlie {
+// 	background-color: $alpha_color_charlie;
+// }
+// .alpha_color_delta {
+// 	background-color: $alpha_color_delta;
+// }
+// .alpha_color_echo {
+// 	background-color: $alpha_color_echo;
+// }
+// .alpha_color_fox {
+// 	background-color: $alpha_color_fox;
+// }
+// .alpha_color_golf {
+// 	background-color: $alpha_color_golf;
+// }
+// .alpha_color_hotel {
+// 	background-color: $alpha_color_hotel;
+// }
+// .alpha_color_india {
+// 	background-color: $alpha_color_india;
+// }
+// .alpha_color_juliet {
+// 	background-color: $alpha_color_juliet;
+// }
+// 
+// 
+// .bravo_color {
+// 	background-color: $bravo_color;
+// }
+// .bravo_color_bravo {
+// 	background-color: $bravo_color_bravo;
+// }
+// .bravo_color_charlie {
+// 	background-color: $bravo_color_charlie;
+// }
+// .bravo_color_delta {
+// 	background-color: $bravo_color_delta;
+// }
+// .bravo_color_echo {
+// 	background-color: $bravo_color_echo;
+// }
+// .bravo_color_fox {
+// 	background-color: $bravo_color_fox;
+// }
+// .bravo_color_golf {
+// 	background-color: $bravo_color_golf;
+// }
+// .bravo_color_hotel {
+// 	background-color: $bravo_color_hotel;
+// }
+// .bravo_color_india {
+// 	background-color: $bravo_color_india;
+// }
+// .bravo_color_juliet {
+// 	background-color: $bravo_color_juliet;
+// }
+// 
+// 
+// 
+// 
+// 
+// .charlie_color {
+// 	background-color: $charlie_color;
+// }
+// .charlie_color_bravo {
+// 	background-color: $charlie_color_bravo;
+// }
+// .charlie_color_charlie {
+// 	background-color: $charlie_color_charlie;
+// }
+// .charlie_color_delta {
+// 	background-color: $charlie_color_delta;
+// }
+// .charlie_color_echo {
+// 	background-color: $charlie_color_echo;
+// }
+// .charlie_color_fox {
+// 	background-color: $charlie_color_fox;
+// }
+// .charlie_color_golf {
+// 	background-color: $charlie_color_golf;
+// }
+// .charlie_color_hotel {
+// 	background-color: $charlie_color_hotel;
+// }
+// .charlie_color_india {
+// 	background-color: $charlie_color_india;
+// }
+// .charlie_color_juliet {
+// 	background-color: $charlie_color_juliet;
+// }
+// 
+// 
+// 
+// .delta_color {
+// 	background-color: $delta_color;
+// }
+// .delta_color_bravo {
+// 	background-color: $delta_color_bravo;
+// }
+// .delta_color_charlie {
+// 	background-color: $delta_color_charlie;
+// }
+// .delta_color_delta {
+// 	background-color: $delta_color_delta;
+// }
+// .delta_color_echo {
+// 	background-color: $delta_color_echo;
+// }
+// .delta_color_fox {
+// 	background-color: $delta_color_fox;
+// }
+// .delta_color_golf {
+// 	background-color: $delta_color_golf;
+// }
+// .delta_color_hotel {
+// 	background-color: $delta_color_hotel;
+// }
+// .delta_color_india {
+// 	background-color: $delta_color_india;
+// }
+// .delta_color_juliet {
+// 	background-color: $delta_color_juliet;
+// }
+// 
+// 
+// 
+// .echo_color {
+// 	background-color: $echo_color;
+// }
+// .echo_color_bravo {
+// 	background-color: $echo_color_bravo;
+// }
+// .echo_color_charlie {
+// 	background-color: $echo_color_charlie;
+// }
+// .echo_color_delta {
+// 	background-color: $echo_color_delta;
+// }
+// .echo_color_echo {
+// 	background-color: $echo_color_echo;
+// }
+// .echo_color_fox {
+// 	background-color: $echo_color_fox;
+// }
+// .echo_color_golf {
+// 	background-color: $echo_color_golf;
+// }
+// .echo_color_hotel {
+// 	background-color: $echo_color_hotel;
+// }
+// .echo_color_india {
+// 	background-color: $echo_color_india;
+// }
+// .echo_color_juliet {
+// 	background-color: $echo_color_juliet;
+// }
+
+
+
+///////// OOCSS text classes  //////////
+// ------------------------------------
+// .primary_font_family {
+// 	font-family: $primary_font_family;
+// }
+.heading_font_family {
+	font-family: $heading_font_family;
+}
+.web_font_alpha {
+	font-family: $web_font_alpha;
+}
+.web_font_bravo {
+	font-family: $web_font_bravo;
+}
+// .web_font_charlie {
+// 	font-family: $web_font_charlie;
+// }
+// .web_font_delta {
+// 	font-family: $web_font_delta;
+// }
+
+
+.headings_1 {
+	@include heading_1;
+}
+
+.headings_2 {
+	@include heading_2;
+}
+
+.headings_3 {
+	@include heading_3;
+}
+
+// .xx_small {
+//  	@include xx_small;
+// }
+//  
+// .x_small {
+// 	@include x_small;
+// }
+// 
+// .small {
+// 	@include small;
+// }
+
+.medium {
+	@include medium;
+}
+
+// .large {
+// 	@include large;
+// }
+
+.x_large {
+ 	@include x_large;
+}
+ 
+.xx_large {
+	@include xx_large;
+}
+
+.xxx_large {
+	@include xxx_large;
+}
+
+// .xxxx_large {
+// 	@include xxxx_large;
+// }
+
+.primary_text_shadow {
+	@include text_shadow($shadow_color, 10px 10px 0);
+}
+///////// OOCSS text classes  //////////
+
+
+
+// //// clearfix //////////
+// ------------------------------------
+.clearfix {
+	@include clearfix;
+}
+
+////////// Standard bulleted list //////////////
+// ------------------------------------
+// .standard_bullets {
+// 	@include bulleted_list;
+// }
+
+////////// CSS letter case styles  ////////////
+// -------------------------------------------
+// .uppercase {
+// 	@include uppercase;
+// }
+// 
+// .lowercase {
+// 	@include lowercase;
+// }
+// 
+// .capitalize {
+// 	@include capitalize;
+// }
+
+
+// semantic button colors
+// ------------------------
+// .primary_button_color {
+// 	@include primary_button_color;
+// }
+// 
+// .primary_button_hover {
+// 	@include primary_button_hover;
+// }
+// 
+// .primary_button_active {
+// 	@include primary_button_active;
+// }
+// 
+// .primary_button_border_color {
+// 	background-color: $primary_button_border_color;
+// }
+
+//// ----
+
+// .alt_primary_button_color {
+// 	@include alt_primary_button_color;
+// }
+// 
+// .alt_primary_button_hover {
+// 	@include alt_primary_button_hover;
+// }
+// 
+// .alt_primary_button_active {
+// 	@include alt_primary_button_active;
+// }
+// 
+// .alt_primary_button_border_color {
+// 	background-color: $alt_primary_button_border_color;
+// }
+
+//// ----
+
+// .secondary_button_color {
+// 	@include secondary_button_color;
+// }
+// 
+// .secondary_button_hover {
+// 	@include secondary_button_hover;
+// }
+// 
+// .secondary_button_active {
+// 	@include secondary_button_active;
+// }
+// 
+// .secondary_button_border_color {
+// 	background-color: $secondary_button_border_color;
+// }
+
+//// ----
+
+// .big_pill_button_color {
+// 	@include big_pill_button_color;
+// }
+// 
+// .big_pill_button_hover {
+// 	@include big_pill_button_hover;
+// }
+// 
+// .big_pill_button_active {
+// 	@include big_pill_button_active;
+// }
+// 
+// .big_pill_button_border_color {
+// 	background-color: $big_pill_button_border_color;
+// }
+
+//// ----
+
+// .secondary_big_pill_button_color {
+// 	@include secondary_big_pill_button_color;
+// }
+// 
+// .secondary_big_pill_button_hover {
+// 	@include secondary_big_pill_button_hover;
+// }
+// 
+// .secondary_big_pill_button_active {
+// 	@include secondary_big_pill_button_active;
+// }
+// 
+// .secondary_big_pill_button_border_color {
+// 	background-color: $secondary_big_pill_button_border_color;
+// }
+
+//// ----
+
+// .alternate_button_color {
+// 	@include alternate_button_color;
+// }
+
+//// ----
+
+// .alternate_concatenate_button_color {
+// 	@include alternate_concatenate_button_color;
+// }
+// 
+// .alternate_concatenate_button_hover {
+// 	@include alternate_concatenate_button_hover;
+// }
+// 
+// .alternate_concatenate_button_active {
+// 	@include alternate_concatenate_button_active;
+// }
+// 
+// .alternate_concatenate_button_disabled {
+// 	@include alternate_concatenate_button_disabled;
+// }
+
+//// ----
+
+// .cancel_buttons {
+// 	a#disabled {
+// 		background: none;
+// 		@include box_shadow(0 0 0, $white);
+// 		&:hover {
+// 			@include box_shadow(0px 0 0, $white);
+// 			text-decoration: none;
+// 		}
+// 	}
+// }
+
+//// ----
+
+
+// This will concatenate a row of button all with the primary style
+// -----------------------------------------------------------------
+// .alternate_primary_buttons {
+// 	button, input[type=submit], input[type=button], a.button {
+// 		@include primary_button($var: secondary);
+// 	}
+// }
+
+// This will concatenate a row of button all with the secondary style
+// ------------------------------------------------------------------
+// .secondary_buttons {
+// 	@include secondary_button;
+// }
+
+
+// This will convert a row of buttons to the SMALL style
+// -----------------------------------------------------	
+// .small_buttons {
+// 	@include small_button;
+// }
+
+// This will convert a row of buttons to the PRIMARY style
+// -----------------------------------------------------	
+// .all_primary_buttons {
+// 	@include all_primary_button;
+// }
+
+// This will convert a row of buttons to the ALTERNATE style
+// -----------------------------------------------------	
+// .alternate_buttons {
+// 	@include alternate_button;
+// }
+
+// This will convert a row of buttons to the ALTERNATE concatenate style
+// -----------------------------------------------------	
+// .alternate_concatenate_buttons {
+// 	@include alternate_concatenate_button;
+// }
+
+// This will convert a row of buttons to the ALTERNATE style for paging
+// -----------------------------------------------------	
+// .alternate_paging_buttons {
+// 	@include alternate_paging_button;
+// }
+
+// When applied, set nth value for where CANCEL <button> link UI is to appear. 
+// --------------------------------------------------------------------------- 
+// .cancel_buttons {
+// 	button, input[type=submit], input[type=button], a.button {
+// 		&:nth-child(1n+2) {
+// 			@include cancel_link;
+// 		}
+// 	}
+// }
+
+// Returns a button back to a blank slate. 
+// ---------------------------------------- 
+// .anti_buttons {
+// 	@include anti_button;
+// }
+
+// When applied, created the BIG button style 
+// ------------------------------------------ 
+// .big_pill_buttons {
+// 	@include big_pill_button();
+// }
+// 
+// .big_pill_icons {
+// 	@include big_pill_button(icon);
+// }
+
+
+
+////////// Standard form UI objects ///////////////
+// ------------------------------------
+// 
+// .vertical_checkbox_radiobutton_input_default_layout {
+// 	@include vertical_checkbox_radiobutton_input_default_layout;
+// }
+// 
+// .label_line_wraps {
+// 	@include label_line_wrap;
+// }
+// 
+// ------------------------------------
+////////// Standard form UI objects ///////////////
+
+////////// General UI OOCSS  //////////
+// ------------------------------------
+// .getty_search_subhead_over-write {
+// 	margin-bottom: 0;
+// 	padding: 0;
+// }
+
+// .standard_block_spacing {
+// 	@extend .clearfix;
+// 	margin-bottom: #{20 / $em}em !important;
+// }
+
+.standard_border_radius {
+	@include border_radius(#{6 / $em}em);
+	.ie8 &, .ie7 &, .ie6 & {
+		@include border_radius(0);
+	}
+}
+
+// .standard_rounded_border {
+// 	@extend .standard_border_radius;
+// 	border: 1px solid $border_color;
+// }
+
+.primary_box_shadow {
+	@include box_shadow ($shadow_color, 0 #{2 / $em}em #{4 / $em}em);
+}
+
+// .two_column_info_pannels {
+// 	@extend .standard_block_spacing;
+// }
+
+// .panel_header {
+// 	@extend .large;
+// 	color: $white;
+// 	@media print {
+// 		color: $alpha_grey;
+// 	}
+// 	background: $bravo_grey;
+// 	line-height: 2.5em;
+// 	font-weight: bold;
+// 	text-indent: #{10 / $em}em;
+// 	@include border_radius(#{4 / $large_point_size}em);
+// }
+
+
+//////////// semantic grid /////////////
+// ------------------------------------
+.center_grid_12_2 {
+	@include center_grid_12(2);
+}
+
+// .center_grid_12_4 {
+// 	@include center_grid_12(4);
+// }
+
+.center_grid_12_8 {
+	@include center_grid_12(8);
+}
+
+.center_grid_12_12 {
+	@include center_grid_12(12);
+}
+
+// .grid_12_1 {
+// 	@include grid_12(1);
+// }
+
+.grid_12_2 {
+	@include grid_12(2);
+}
+
+.grid_12_3 {
+	@include grid_12(3);
+}
+
+.grid_12_4 {
+	@include grid_12(4);
+}
+
+.grid_12_5 {
+	@include grid_12(5);
+}
+
+.grid_12_6 {
+	@include grid_12(6);
+}
+
+.grid_12_7 {
+	@include grid_12(7);
+}
+
+// .grid_12_8 {
+// 	@include grid_12(8);
+// }
+// 
+// .grid_12_9 {
+// 	@include grid_12(9);
+// }
+// 
+// .grid_12_10 {
+// 	@include grid_12(10);
+// }
+// 
+// .grid_12_11 {
+// 	@include grid_12(11);
+// }
+// 
+// .grid_12_12 {
+// 	@include grid_12(12);
+// }
+// 
+// .grid_16_6 {
+// 	@include grid_16(6);
+// }
+// 
+// .grid_16_12 {
+// 	@include grid_16(12);
+// }
+// 
+// .push_12_1 {
+// 	@include push_12(1);
+// }
+
+.push_12_2 {
+	@include push_12(2);
+}
+
+.alpha {
+	@include alpha;
+}
+
+.omega {
+	@include omega;
+}
+
+
+
+
+

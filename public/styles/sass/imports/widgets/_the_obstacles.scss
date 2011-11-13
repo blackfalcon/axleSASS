@@ -1,0 +1,62 @@
+#sunday_slide, #hamster_wheel, #down_the_hatch, #pick_it, #wringer {
+	display: none;
+}
+
+.the_obstacles {
+	@extend .grid_12_6;
+	@extend .omega;
+}
+
+.obstacle_header {
+	@include background_with_transform_title;
+	background-size: #{181 / $em}em;
+	width: #{420 / $em}em;
+	height: #{216 / $em}em;
+	background-size: #{250 / $em}em;
+	text-align: center;
+	@include push_12(0.3);
+	p {
+		position: relative;
+		&:first-child {
+			@extend .headings_3;
+			margin-bottom: 0;
+			top: #{55 / $heading_3_font_size}em;
+			width: 100%;
+			line-height: 1em;
+		}
+		&:last-child {
+			@extend .x_large;
+			top: #{55 / $x_large_point_size}em;
+		}
+	}
+}
+
+.each_obstacle {
+	background: url(/public/images/obstacles.gif) no-repeat -35px -25px;
+	background-size: 1800px;
+	width: 100%;
+	height: 510px;
+	&.the_tank {
+		background-position: -569px -612px;
+		background-size: 1588px;
+	}
+	&.sunday_slide {
+		background-position: -51px -625px;
+		background-size: 1625px;
+	}
+	&.hamster_wheel {
+		background-position: -570px -31px;
+		background-size: 1530px;
+	}
+	&.down_the_hatch {
+		background-position: -35px -58px;
+	}
+	&.pick_it {
+		background-position: -1221px -30px;
+		background-size: 1665px;
+	}
+	&.wringer {
+		background-position: -1101px -632px;
+		background-size: 1567px;
+	}
+}

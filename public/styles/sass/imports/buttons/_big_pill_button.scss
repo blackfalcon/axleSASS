@@ -1,0 +1,93 @@
+/////// big pill buttons ///////////
+
+// edit your object variables //
+// ---------------------------------------//
+@mixin big_pill_button_color {
+	@extend .alpha_color_gradient;
+}
+
+@mixin big_pill_button_color_hover {
+	@extend .bravo_color_gradient;
+}
+
+@mixin big_pill_icon_button_padding {
+	padding: #{4 / $em}em #{10 / $em}em #{4 / $em}em #{40 / $em}em;
+	.ie7 &, .ie8 &, .ie9 & {
+		padding: #{4 / $em}em #{10 / $em}em;
+	}
+}
+
+@mixin big_pill_icon_button_colors {
+	// alpha_color_gradient //	
+	// w3c //
+	//@include linear_gradient_bkgimage ('/CMS/Styles/images/play_button.png',5% 50%, $echo_color_bravo, $alpha_color_gradient_var_w3c);
+	// legacy safari //
+	//@include linear_gradient_bkgimage_legacy_safari ('/CMS/Styles/images/play_button.png', 5% 50%, $alpha_color_gradient_var_legacy_safari);
+	@include big_pill_icon_button_padding;
+}
+
+
+@mixin big_pill_icon_button_colors_hover {
+	// bravo_color_gradient //
+	// w3c //
+	//@include linear_gradient_bkgimage ('/public/images/play_button.png',5% 50%, $echo_color, $bravo_color_gradient_var_w3c);
+	// legacy safari //
+	//@include linear_gradient_bkgimage_legacy_safari ('/CMS/Styles/images/play_button.png', 5% 50%, $bravo_color_gradient_var_legacy_safari);
+	@include big_pill_icon_button_padding;
+}
+
+
+@mixin big_pill_icon_button {
+	@include big_pill_icon_button_colors;
+	&:hover, &:active {
+		@include big_pill_icon_button_colors_hover;
+	}
+}
+
+
+
+
+
+// This is your button mixin //
+// ---------------------------------------//
+@mixin big_pill_button ($var: default) {
+	button, input[type=submit], input[type=button], .button {
+		@if $var == icon {
+			@include big_pill_icon_button;
+		}
+		@else {
+			@include big_pill_button_color;
+			padding: #{4 / $em}em #{10 / $em}em;
+			&:hover, &:active {
+				@include big_pill_button_color_hover;
+			}
+		}
+		@extend .xxxx_large;
+		@include border_radius(#{4 / $xxxx_large_point_size}em);
+		color: $white;
+		@media print {
+			color: $alpha_grey;
+		}
+		border: #{1 / $em}em solid $echo_color_echo;
+		font-weight: bold !important;
+		@extend .primary_text_shadow;
+		@extend .primary_box_shadow;
+		.ie9 & {
+			@include border_radius(0);
+		}
+		&[disabled] {
+			background: $echo_grey;
+			color: $delta_grey
+		}
+	}
+	.button {
+		display: inline-block;
+		font-family: $primary_font_family;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+} 
+
+// Find button object classes in /public/styles/sass/imports/_oocss.scss //
+// ---------------------------------------//

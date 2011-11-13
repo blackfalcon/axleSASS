@@ -1,0 +1,47 @@
+.checker_deco_spacing {
+	margin: #{15 / $em}em 0 #{55 / $em}em #{40 / $em}em;
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		margin-bottom: #{56 / $em}em;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		margin-bottom: #{56 / $em}em;
+	}
+}
+
+.checker_deco {
+	display: inline;
+	float: left;
+	.ie & {
+		border: 1px solid transparent;
+	}
+	.obstacles & {
+		@include zero_margin_grid_12(8.5);
+		@extend .checker_deco_spacing;
+	}
+	.prizes & {
+		@include zero_margin_grid_12(9.5);
+		@extend .checker_deco_spacing;
+	}
+	.contest_form & {
+		@include zero_margin_grid_12(6.5);
+		@extend .checker_deco_spacing;
+	}
+	height: #{40 / $em}em;
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		height: #{39 / $em}em;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		height: #{39 / $em}em;
+	}
+	overflow: hidden;
+	span {
+		width: #{20 / $em}em;
+		height: #{20 / $em}em;
+		display: block;
+		background: $charlie_color;
+		float: left;
+		&:nth-child(even) {
+			background: transparent;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+.button_nav {
+	@extend .grid_12_6;
+	@extend .alpha;
+	@extend .clearfix;
+	li {
+		@extend .grid_12_3;
+		height: #{221 / $em}em;
+		margin-bottom: #{20 / $em}em;
+		@extend .button_nav_text;
+		&:nth-child(odd) {
+			@extend .alpha;
+		}
+		&:nth-child(even) {
+			@extend .omega;
+		}
+		a {
+			@extend .standard_border_radius;
+			background: url(/public/images/obstacles.gif) no-repeat $bravo_color #{-194 / $em}em #{-229 / $em}em;
+			background-size: #{600 / $em}em;
+			display: block;
+			line-height: #{410 / $em}em;
+			height: #{222 / $em}em;
+			&:hover {
+				text-decoration: none;
+			}
+			&:hover {
+				background-color: $charlie_color;
+				color: $echo_color;
+				cursor: pointer;
+			}
+			&.selected {
+				background-color: $charlie_color;
+				color: $echo_color;
+			}
+		}
+		&[data-obstacle-name=sunday_slide] {
+			a {
+				background-position: #{8 / $em}em #{-231 / $em}em;
+			}
+		}
+		&[data-obstacle-name=hamster_wheel] {
+			a {
+				background-position: #{-201 / $em}em #{-4 / $em}em;
+			}
+		}
+		&[data-obstacle-name=down_the_hatch] {
+			a {
+				background-position: #{9 / $em}em #{0 / $em}em;
+			}
+		}
+		&[data-obstacle-name=wringer] {
+			a {
+				background-position: #{-394 / $em}em #{-240 / $em}em;
+			}
+		}
+		&[data-obstacle-name=pick_it] {
+			a {
+				background-position: #{-409 / $em}em #{-3 / $em}em;
+			}
+		}
+	}
+}

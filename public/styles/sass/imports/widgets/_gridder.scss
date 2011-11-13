@@ -1,0 +1,16 @@
+//////////// only for the display of the grid in the screen assembly //////////
+.inner_widget {
+	background-position: -10px 0 !important;
+}
+
+.grid_12_col_background {
+	background: url(/axle/images/12_col.gif);
+	//margin-bottom: 20px;
+	//float: left;	
+}
+
+.grid_12_col_background_shift {
+	@extend .grid_12_col_background;	
+	@extend .inner_widget;
+}
+//////////// only for the display of the grid in the screen assembly //////////

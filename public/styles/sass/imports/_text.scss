@@ -1,0 +1,151 @@
+// All google font includes are placed in the RESET.SCSS file
+// -----------------------------------------------------------
+
+@import "mixin_arguments";
+@import "font_libraries/_digitaldreamfat.scss";
+@import "font_libraries/_komikatitle.scss";
+@import "font_libraries/_komikawide.scss";
+@import "font_libraries/_chivo-regular.scss";
+
+
+// * ------------------
+// Type defaults
+// * ------------------
+// only need to edit default font size and family, magical SASS takes care of the rest
+$font_size: 14;
+$em: $font_size;
+
+// $heading_1_font_size: 52;
+// $heading_2_font_size: 22;
+// $heading_3_font_size: 40;
+
+$heading_1_font_size: ($font-size + 38);
+$heading_2_font_size: ($font-size + 8);
+$heading_3_font_size: ($font-size + 26);
+
+$line: $font_size * 1.5;
+$line_height: #{$line / $em}em;
+
+$web_font_alpha: #{'DigitaldreamFatRegular', Arial, sans-serif};
+$web_font_bravo: #{'KomikaTitle-PaintRegular', Arial, sans-serif};
+$web_font_charlie: #{'ChivoRegular', Arial, sans-serif};
+$web_font_delta: #{'KomikaTitleWideRegular', Arial, sans-serif};
+
+$primary_font_family: $web_font_charlie;
+$heading_font_family: $web_font_bravo;
+
+
+
+// Text mixins
+// Find the .font argument @ /imports/mixin_arguments.less
+
+//////// heading text mixins //////////
+// ------------------------------------------------
+@mixin heading_1 {
+	font-size: #{$heading_1_font_size / $em}em;
+	line-height: 1.5em;
+	font-family: $heading_font_family;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
+@mixin heading_2 {
+	@extend .headings_1;
+	font-family: $primary_font_family;
+	font-size: #{$heading_2_font_size / $em}em;
+}
+
+@mixin heading_3 {
+	@extend .headings_1;
+	font-size: #{$heading_3_font_size / $em}em;
+	color: $white;
+	@include text_shadow ($shadow_color, 3px 3px 0);
+	margin-bottom: #{50 / $heading_3_font_size}em;
+	float: left;
+}
+
+//////// heading text mixins //////////
+
+
+//////// standard text mixins //////////
+// ------------------------------------------------
+
+@mixin xx_small {
+	@include font(#{8 / $em}em);
+}
+
+@mixin x_small {
+	@include font(#{9 / $em}em);
+}  
+
+$small_point_size: 10;
+$small_em_scale: #{$small_point_size / $em};
+@mixin small {
+	@include font(#{$small_em_scale}em); 
+}
+
+@mixin medium {
+	@include font();
+}
+
+$large_point_size: 16;
+$large_em_scale: #{$large_point_size / $em};
+@mixin large {
+	@include font(#{$large_em_scale}em); 
+}
+
+$x_large_point_size: 20;
+@mixin x_large {
+	@include font(#{$x_large_point_size / $em}em); 
+}
+ 
+$xx_large_point_size: 24;  
+@mixin xx_large {
+	@include font(#{$xx_large_point_size / $em}em);
+}
+
+$xxx_large_point_size: 26;
+@mixin xxx_large {
+	@include font(#{$xxx_large_point_size / $em}em);
+}
+
+$xxxx_large_point_size: 28;
+$xxxx_large_em_scale: #{$xxxx_large_point_size / $em};
+@mixin xxxx_large {
+	@include font(#{$xxxx_large_em_scale}em);	
+}
+
+
+//////// standard text mixins //////////
+
+
+
+//////// text with background color mixins //////////
+// --------------------------------------------------
+
+@mixin bkg_text ($background: #fff, $text_color: #313131, $href: #1199dd){
+	background-color: $background;
+	color: $text_color;
+	a {
+		color: $href;
+	}
+}
+
+// --------------------------------------------------
+//////// text with background color mixins //////////
+
+
+////////// CSS letter case mixins  ////////////
+// -------------------------------------------
+@mixin uppercase {
+	text-transform: uppercase;
+}
+
+@mixin lowercase {
+	text-transform: lowercase;
+}
+
+@mixin capitalize {
+	text-transform: capitalize;
+}
+////////// CSS letter case mixins  ////////////

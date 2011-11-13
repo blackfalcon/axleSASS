@@ -1,0 +1,8 @@
+@mixin decorative_button {
+	@include background_with_transform_title;
+	@extend .xxx_large;
+	background-size: #{181 / $xxx_large_point_size}em;
+	width: #{300 / $xxx_large_point_size}em;
+	height: #{200 / $xxx_large_point_size}em;
+	@include push_12(0.25);
+}

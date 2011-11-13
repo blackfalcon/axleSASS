@@ -1,0 +1,45 @@
+.prizes_grid {
+	@extend .image_grid;
+	margin-bottom: -175px;
+	float: left;
+	p {
+		position: relative;
+	}
+	li {
+		background: url(/public/images/prizes_sprite.gif) no-repeat 0px 0px;
+		&[data-prize-name=space_camp] {
+			background-position: 0px 0px;
+			height: 390px;
+			p {
+				bottom: #{-390 / $em}em;
+			}
+		}
+		&[data-prize-name=sk8_board] {
+			background-position: -490px 0px;
+			height: 240px;
+			p {
+				bottom: #{-240 / $em}em;
+			}
+		}
+		&[data-prize-name=keyboard] {
+			background-position: 0px -490px;
+			height: 190px;
+			position: relative;
+			top: 225px;
+			left: -460px;
+			p {
+				bottom: #{-190 / $em}em;
+			}
+		}
+		&[data-prize-name=tv_vcr] {
+			background-position: -455px -320px;
+			height: 390px;
+			position: relative;
+			left: 463px;
+			top: -185px;
+			p {
+				bottom: #{-390 / $em}em;
+			}
+		}
+	}
+}

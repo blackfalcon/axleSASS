@@ -1,0 +1,81 @@
+/////// primary buttons ///////////
+
+// edit your variables //
+// --------------------------------------- //
+
+// primary button values //
+// ---------------------- //
+@mixin primary_button_color {
+	@include alpha_color_gradient;
+}
+
+@mixin primary_button_hover {
+	@include alpha_color_gradient;
+}
+
+@mixin primary_button_active {
+	@include primary_button_hover;
+}
+
+$primary_button_border_color: $alpha_color;
+@mixin primary_button_border {
+	border: 1px solid $primary_button_border_color;
+}
+// ---------------------- //
+// primary button values //
+
+
+
+// This is your button //
+// ---------------------------------------//
+@mixin primary_button {
+	@include primary_button_color;
+	@include primary_button_border;
+	padding: .2666667em 2em;
+	@include border_radius (3px);
+	color: $button_text;
+	outline: none;
+	width: auto;
+	@include large;
+	margin-right: 1em;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+		
+	&:hover {
+		@if $var == secondary {
+			@include alt_primary_button_hover;
+		}
+		@else {
+			@include primary_button_hover;
+		}
+		text-decoration: none;
+		cursor: pointer;
+	}
+		
+	&:active {
+		@if $var == secondary {
+			@include alt_primary_button_active;
+		}
+		@else {
+			@include primary_button_active;
+		}
+
+	}
+		
+	//&[disabled] {
+	//	@include button_disabled;
+	//}
+}
+// 
+// 
+// @mixin all_primary_button() {
+// 	button, input[type=submit], input[type=button], a.button {
+// 		@include primary_button;
+// 		&:nth-child(n+2) {
+// 			@include primary_button;
+// 		}
+// 	}
+// }
+

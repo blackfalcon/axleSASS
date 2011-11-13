@@ -1,0 +1,11 @@
+.kn_mini_logo {
+	@extend .center_grid_12_2;
+	height: #{85 / $heading_1_font_size}em;
+	background: url(/public/images/mini_logo_bkg.gif) no-repeat 50% 50%;
+	@extend .heading_font_family;
+	@extend .headings_1;
+	text-align: center;
+	position: relative;
+	top: #{-85 / $heading_1_font_size}em;
+	margin-bottom: #{-65 / $heading_1_font_size}em;
+}

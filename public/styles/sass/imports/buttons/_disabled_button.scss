@@ -1,0 +1,18 @@
+/////// disabled buttons ///////////
+
+// edit your variables //
+// ---------------------------------------//
+@mixin xxx {
+	@include XXX;
+	@extend XXX;
+}
+
+
+
+
+// This is your button //
+// ---------------------------------------//
+@mixin XXX {
+	button, input[type=submit], input[type=button], a.button {
+	}
+} 

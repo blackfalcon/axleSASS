@@ -1,0 +1,183 @@
+@import "mixin_arguments";
+
+// ...............
+// 960 GRID SYSTEM
+// ...............
+// 
+// Created by Nathan Smith. See the official site for more info: http://960.gs/
+// 
+// GPL license:
+// http://www.gnu.org/licenses/gpl.html
+// 
+// MIT license:
+// http://www.opensource.org/licenses/mit-license.php
+// ---------------------------------------------------------------------------
+// 
+// Updated by Dale Sande
+// It is amazing how complex this gets, can't imagine trying to do this in old fashioned CSS
+//
+
+
+///////// Base values for building grid ///////////
+// ------------------------------------------------
+$base_10: 10;	// equal to 10px in the standard 960.gs
+// $base_20: 20;	// equal to 20px in the standard 960.gs
+// $base_40: 40;	// equal to 40px in 16 col standard 960.gs
+// $base_60: 60;	// equal to 60px in 12/16 col standard 960.gs
+// $base_80: 80;	// equal to 80px in 12 col standard 960.gs
+
+///////// 960px standard width 12 column grid /////////
+$col_12_width: 60;
+$col_16_width: 40;
+
+///////// standard gutter width /////////
+$col_gutter: 20;
+
+///////// 760px standard width 10 column grid /////////
+$col_12_ipad_width: 43;
+
+
+@mixin position() {
+	position: relative;
+}
+
+@mixin grid_placement($var) {
+	display: inline;
+	float: left;
+	$var_calc: #{$var / $em}em;
+	margin: 0 $var_calc;
+}
+
+@mixin grid_support_math($col_count, $base_value) {
+	$gutter_count: $col_count - 1;
+	$gutter_value: $gutter_count * $col_gutter;
+	$col_count_width: $col_count * $base_value;
+	@include grid_placement($base_10);
+	$grid_width: $col_count_width + $gutter_value;
+	width: #{$grid_width / $em}em;
+}
+
+
+/////// grids for centering blocks within screen ///////////
+@mixin center_grid_math($col_count, $base_value) {
+	$gutter_count: $col_count - 1;
+	$gutter_value: $gutter_count * $col_gutter;
+	$col_count_width: $col_count * $base_value;
+	$grid_width: $col_count_width + $gutter_value;
+	width: #{$grid_width / $em}em;
+	margin: 0 auto;
+}
+
+/////// grids with no outside margins ///////////
+@mixin zero_margin_grid_math($col_count, $base_value) {
+	$gutter_count: $col_count - 1;
+	$gutter_value: $gutter_count * $col_gutter;
+	$col_count_width: $col_count * $base_value;
+	$grid_width: $col_count_width + $gutter_value;
+	width: #{$grid_width / $em}em;
+}
+
+
+///////// 12 col 960 grid system ///////////
+// ----------------------------------------
+@mixin grid_12($col_count) {  
+	@include grid_support_math($col_count, $base_value: $col_12_width);
+}
+
+@mixin center_grid_12($col_count) {  
+	@include center_grid_math($col_count, $base_value: $col_12_width);
+}
+
+@mixin zero_margin_grid_12($col_count) {  
+	@include zero_margin_grid_math($col_count, $base_value: $col_12_width);
+}
+
+///////// 16 col 960 grid system ///////////
+// ----------------------------------------
+@mixin grid_16($col_count) {
+	@include grid_support_math($col_count, $col_16_width); 
+}
+
+///////// 10 col 760 grid system ///////////
+// ----------------------------------------
+@mixin grid_12_ipad($col_count) {
+	@include grid_support_math($col_count, $col_12_ipad_width); 
+}
+
+///////// prefix value accounts for a full column in the grid ////////////
+// -----------------------------------------------------------------------
+@mixin prefix_12($col_count) {
+	padding-left: ($col_12_width + $col_gutter) * $col_count;
+}
+
+@mixin prefix_16($col_count) {
+	padding-left: ($col_16_width + $col_gutter) * $col_count;
+}
+
+@mixin prefix_12_ipad($col_count) {
+	padding-left: ($col_12_ipad_width + $col_gutter) * $col_count;
+}
+
+///////// suffix value accounts for a full column in the grid ////////////
+// -----------------------------------------------------------------------
+
+@mixin suffix_12($col_count) {
+	padding-right: ($col_12_width + $col_gutter) * $col_count;
+}
+
+@mixin suffix_16($col_count) {
+	padding-right: ($col_16_width + $col_gutter) * $col_count;
+}
+
+@mixin suffix_12_ipad($col_count) {
+	padding-right: ($col_12_ipad_width + $col_gutter) * $col_count;
+}
+
+///////// push value accounts for a full column in the grid ////////////
+// -----------------------------------------------------------------------
+
+@mixin push_12($col_count) {
+	$left_calc: ($col_12_width + $col_gutter) * $col_count;
+	left: #{$left_calc / $em}em;
+	@include position;
+}
+
+@mixin push_16($col_count) {
+	left: ($col_16_width + $col_gutter) * $col_count;
+	@include position;
+}
+
+@mixin push_12_ipad($col_count) {
+	left: ($col_12_ipad_width + $col_gutter) * $col_count;
+	@include position;
+}
+
+
+///////// pull value accounts for a full column in the grid ////////////
+// -----------------------------------------------------------------------
+
+@mixin pull_12($col_count) {
+	right: ($col_12_width + $col_gutter) * $col_count;
+	@include position;
+}
+
+@mixin pull_12_ipad($col_count) {
+	right: ($col_12_ipad_width + $col_gutter) * $col_count;
+	@include position;
+}
+
+@mixin pull_16($col_count) {
+	right: ($col_16_width + $col_gutter) * $col_count;
+	@include position;
+}
+
+/////////// `Grid >> Children (Alpha ~ First, Omega ~ Last) ///////////
+// --------------------------------------------------------------------
+@mixin alpha() {
+	margin-left: 0;
+}
+
+@mixin omega() {
+	margin-right: 0;
+}
+

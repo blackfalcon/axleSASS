@@ -1,0 +1,15 @@
+.triple_dare_header {
+	@extend .center_grid_12_12;
+	hgroup {
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+	h1 {
+		color: $echo_color;
+		@include text_shadow ($white, 3px 3px 0);
+	}
+	h2 {
+		color: $white;
+	}
+}

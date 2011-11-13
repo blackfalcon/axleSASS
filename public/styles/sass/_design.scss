@@ -1,0 +1,72 @@
+///////// global //////////
+body {
+	background: url(/public/images/textures.gif);
+	.ie8 & {
+		background: none;
+	}
+}
+
+.page_container {
+	@extend .clearfix;
+	width: 100%;
+	&:nth-child(2) {
+		background: url(/public/images/slime_spot.png) no-repeat transparentize($delta_color, .2) 50% 0;
+		.ie8 &, .ie7 & {
+			background: $delta_color;
+		}
+		padding-top: #{30 / $em}em;
+		height: #{(713 - 30) / $em}em;
+	}
+	&:nth-child(3) {
+		background: transparentize($echo_color, .2);
+		.ie8 &, .ie7 & {
+			background: $echo_color;
+		}
+	}
+	&:nth-child(4) {
+		background: transparentize($bravo_color, .2);
+		.ie8 &, .ie7 & {
+			background: $bravo_color;
+		}
+	}
+	&:nth-child(5) {
+		background: transparentize($delta_color, .2);
+		.ie8 &, .ie7 & {
+			background: $delta_color;
+		}
+	}
+}
+
+article {
+	@extend .center_grid_12_12;
+	padding: #{40 / $em}em 0;
+	//@extend .grid_12_col_background_shift;
+}
+
+.box_shadow {
+	width: 100%;
+	height: #{7 / $em}em;
+	background: transparentize($alpha_grey, .9);
+	.ie8 &, .ie7 & {
+		background: $fox_grey;
+	}
+}
+
+.obstacles_nav {
+	@extend .button_nav;
+}
+
+.contest_form {
+	@extend .clearfix;
+	padding-bottom: #{100 / $em}em;
+}
+
+.contest_form_container {
+	@extend .grid_12_5;
+	@extend .alpha;
+}
+
+.obstacles, .prizes {
+	@extend .clearfix;
+	//background: transparent;
+}

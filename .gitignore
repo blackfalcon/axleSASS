@@ -1,0 +1,4 @@
+log
+.DS_store
+/public/styles/.sass-cache/*
+/public/styles/compass_app_log.txt

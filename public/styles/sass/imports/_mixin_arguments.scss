@@ -1,0 +1,201 @@
+// This document is to house Axle's dynamic mixins with arguments
+// These mixins are not intended to be application specific
+// -----------------------------------------------------------------
+
+
+// required default value to for vendor prefix support
+// -----------------------------------------------------
+$prefix_defaults: -moz- -webkit- -o- -ms- '';
+
+
+/////// text arguments //////////
+// -----------------------------
+@mixin font ($size: 1em, $line-height: 1.5em, $weight: inherit) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $line-height;
+}
+/////// text arguments //////////
+
+
+/////// placeholder arguments //////////
+// -----------------------------
+@mixin placeholder ($color, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		&::#{$prefix}input-placeholder {
+			color: $color;
+		}
+	}
+}
+/////// text arguments //////////
+
+
+
+
+
+
+/////// shadow arguments /////////
+// -------------------------------
+@mixin box_shadow ($color, $shadow, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		#{$prefix}box-shadow: $color $shadow;
+	}
+}
+
+@mixin dual_box_shadow ($color, $shadow, $inset_color, $inset_shadow, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		#{$prefix}box-shadow: $color $shadow, inset $inset_color $inset_shadow;
+	}
+}
+
+@mixin text_shadow ($color, $shadow, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		#{$prefix}text-shadow: $color $shadow;
+	}
+}
+/////// shadow arguments /////////
+
+
+
+
+
+/////// border-radius arguments	/////////
+// --------------------------------------
+@mixin border_radius ($border_radius, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		#{$prefix}border-radius: $border_radius;
+	}
+}
+/////// border-radius arguments	/////////
+
+
+
+
+/////// column count arguments	/////////
+// --------------------------------------
+@mixin column_count($col_count, $col_gap, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		#{$prefix}column-count: $col_count;
+		#{$prefix}column-gap: $col_gap;
+	}
+}
+
+/////// column count arguments	/////////
+
+
+
+///////// flexbox arguments	/////////
+// -----------------------------------
+@mixin flexbox ($width: 100%, $height: auto, $orient: horizontal, $pack: center, $align: center, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		display: #{$prefix}box;
+		#{$prefix}box-orient: $orient;
+		#{$prefix}box-pack: $pack;
+		#{$prefix}box-align: $align;
+	}
+	height: $height;
+	width: $width;
+}
+
+	
+@mixin flex ($value: 1, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		#{$prefix}box-flex: $value;
+	}
+}
+
+///////// flexbox arguments	/////////
+
+
+
+
+/////// transition arguments //////////
+// http://www.w3schools.com/css3/css3_pr_transition.asp
+
+@mixin transition ($property, $duration, $timing_function, $delay, $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		#{$prefix}transition: $property $duration $timing_function $delay;
+	}
+}
+
+/////// transition arguments //////////
+
+
+/////// transform arguments //////////
+// http://www.w3schools.com/css3/css3_pr_transform.asp
+
+@mixin transform ($function: rotate(-7deg), $prefixes: $prefix_defaults) {
+	@each $prefix in $prefixes {
+		#{$prefix}transform: $function;
+	}
+}
+/////// transform arguments //////////
+
+
+
+
+
+/////// clearfix //////////
+@mixin clearfix () {
+	&:before {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+	&:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+		clear: both;
+	}
+	zoom: 1;
+}
+/////// clearfix //////////
+
+
+///////// inset border /////////
+@mixin inset_border () {
+	@include box_shadow(inset 0 0 1px, $alpha_grey);
+}
+///////// inset border /////////
+
+
+////////// Standard bulleted list //////////////
+// --------------------------------------------
+//// deprecated version ////
+@mixin standard_bullets {
+	list-style: disc;
+	margin: 0 0 1.5em 2.0833333333333%;
+	li {
+		float: none;
+	}
+}
+
+//// new version ////
+@mixin bulleted_list {
+	ul {
+		list-style: disc;
+		margin: 0 0 1.5em 2.0833333333333%;
+	}
+	li {
+		float: none;
+	}
+}
+////////// Standard bulleted list //////////////
+
+
+
+/////// center text trick	/////////
+// ---------------------------------
+// By setting the height of the block element and the line-height to the same value
+// this will typically center the text in the block.
+// If for some reason this needs adjustment, set a new value for the $line_height.
+//
+//
+@mixin center_text ($block_height, $line_height: $block_height) {
+	height: $block_height;
+	line-height: $line-height;
+}
+/////// center text trick	/////////

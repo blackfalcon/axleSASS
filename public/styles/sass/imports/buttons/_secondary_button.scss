@@ -1,0 +1,50 @@
+/////// secondary buttons ///////////
+
+
+
+// edit your variables //
+// ---------------------------------------//
+// @mixin secondary_button_color {
+// 	@include charlie_color_gradient;
+// }
+// 	
+// @mixin secondary_button_hover {
+// 	@include delta_color_gradient;
+// }
+// 
+// @mixin secondary_button_active {
+// 	@include secondary_button_hover;
+// }
+// 
+// $secondary_button_border_color: $delta_grey;
+
+
+// This is your button //
+// ---------------------------------------//
+// @mixin secondary_button_core {
+// 	@include secondary_button_color;
+// 	border-color: $secondary_button_border_color;
+// 	color: $primary_text;
+// 	@include text_shadow (transparent, 0px 0px 0px);
+// 	&:hover {
+// 		@include secondary_button_hover;
+// 		border-color: $secondary_button_border_color;
+// 	}
+// 	
+// 	&:active {
+// 		@include secondary_button_active;
+// 	}
+// 	
+// 	&[disabled] {
+// 		@include button_disabled;
+// 	}
+// }
+// 
+// 
+// 
+// @mixin secondary_button() {
+// 	button, input[type=submit], input[type=button], a.button {
+// 		@include secondary_button_core;
+// 	}
+// }
+

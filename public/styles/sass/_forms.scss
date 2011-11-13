@@ -1,0 +1,229 @@
+//////// buttons ////////
+// ----------------------------------------------
+
+// This will auto concatenate a primary button with a secondary button
+// --------------------------------------------------------------------
+button, input[type=submit], input[type=button], a.button {
+	@include decorative_button;
+	//&:nth-child(n+2) {
+	//	@include secondary_button_core;
+	//}
+}
+////// buttons ////////
+
+
+//////// inputs ////////
+// ---------------------
+
+input[type=text], input[type=email], input[type=password], select, textarea {
+	border: 1px solid $form_field_border;
+	background: $form_field_background_color;
+	padding: #{10 / $em}em 0 #{10 / $em}em #{10 / $em}em;
+	width: 98%;
+	outline: none;
+	@include field_input_spacing;
+	@include field_focus;
+	color: $form_field_text;
+	@extend .medium;
+	@extend .web_font_bravo;
+	@include placeholder($white);
+	letter-spacing: 1px;
+	@include border_radius(#{5 / $em}em);
+}
+
+// textarea {
+// 	+ .instructional {
+// 		margin-top: -1em;
+// 	}
+// }
+
+select {
+	width: 100%;
+	.webkit & {
+		height: 40px;
+	}
+	padding-right: #{10 / $em}em;
+}
+
+.horizontal_select {
+	li {
+		&:first-child {
+			@extend .grid_12_3;
+			@extend .alpha;
+		}
+		&:last-child {
+			@extend .grid_12_2;
+			@extend .omega;
+		}
+	}
+}
+
+// #error {
+// 	color: $alpha_color;
+// 	font-weight: bold;
+// }
+// 
+// .fail {
+// 	background: $form_field_fail_bkg !important;
+// 	border-color: $form_field_border_fail !important;
+// 	color: $form_field_text_fail !important;
+// 	&:focus {
+// 		background: $form_field_fail_bkg !important;
+// 	}
+// 	select {
+// 		background: $form_field_fail_bkg;
+// 		border-color: $form_field_border_fail;
+// 		&:focus {
+// 			background: $form_field_fail_bkg;
+// 		}
+// 	}
+// 	&:after {
+// 		background: $form_field_fail_bkg;
+// 		border-color: $form_field_border_fail;
+// 	}
+// }
+// 
+// input[disabled], textarea[disabled], select[disabled], .disabled {
+// 	background-color: $input_disabled_bkg;
+// 	border-color: $input_disabled_border;
+// 	color: $input_disabled_text;
+// 	&:hover {
+// 		border-color: $input_disabled_border;
+// 	}
+// }
+// 
+// input[type=file], dl.horizontal_selectors, dl.vertical_selectors {
+// 	@include field_input_spacing;
+// }
+
+//////// inputs ////////
+		
+
+//////// form layouts ////////
+// ---------------------------
+
+label {
+	display: block;
+	//@include small;
+	font-weight: bold;
+	//line-height: 1em;
+	//margin-bottom: .5em;
+	span {
+		padding-left: .25em;
+		font-weight: normal;
+	}
+}
+
+input[type=checkbox] {
+	float: left;
+	margin: 0 0.3em 0 0 !important;
+}
+
+// .marketing_fields {
+// 	@include label_line_wrap;
+// }
+
+// .horizontal_form {
+// 	width: 37.5em;
+// 	.input_list {
+// 		@include horizontal_form_input_list;
+// 	}
+// 	.validate {
+// 		position: relative;
+// 	}
+// 	label {
+// 		width: 18.2em;
+// 		margin-right: 1.1em;
+// 		float: left;
+// 		text-align: right;
+// 		@include center_text (2.5em);
+// 	}
+// 	input[type=text], input[type=password], select, textarea {
+// 		width: 21.8em;
+// 		padding: .4em .5em;
+// 		float: left;
+// 	}
+// 	select {
+// 		width: 23em;
+// 	}
+// 	.instructional {
+// 		float: left;
+// 		margin-left: 19.3em;
+// 	}
+// 	.form_error {
+// 		color: $primary_text;
+// 		top: .4em;
+// 		width: 24.0em;
+// 		margin-left: 45em;
+// 	}
+// 	.fieldset_block {
+// 		@extend .clearfix;
+// 		width: 37.5em;
+// 	}
+// }
+
+// .horizontal_form_paragraph {
+// 	margin-left: 16.08333333em;
+// 	select {
+// 		width: 19.25em;
+// 		margin-bottom: 0 !important;
+// 		+ .instructional {
+// 			margin-top: 0.5em;
+// 		}
+// 	}
+// 	label {
+// 		@include medium;
+// 		font-weight: normal;
+// 	}
+// 	p {
+// 		&:last-child {
+// 			margin-bottom: 1em;
+// 		}
+// 	}
+// }
+// 
+// .filter_options {
+// 	@include vertical_checkbox_radiobutton_input_default_layout;
+// }
+// 
+// 
+// 
+// .horizontal_selectors {
+// 	@include flexbox(horizontal, start, end, 100%, 100%);
+// 	@include field_input_spacing;
+// 	+ .horizontal_selectors {
+// 		margin-top: -0.5em;
+// 	}
+// 	@include checkbox_radio_inputs_default;
+// 	
+// 	.ie & {
+// 		float: left;
+// 		width: 113%;
+// 		li {
+// 			float: left;
+// 			&:last-child {
+// 				margin-right: 0;
+// 			}
+// 		}
+// 	}
+// 	.ie7 & {
+// 		li {
+// 			margin: 0;
+// 			padding: 0;
+// 		}
+// 	}
+// }
+// 
+// 
+// .form_input_lists {
+// 	@include form_input_list;
+// 	width: 100%;
+// 	overflow: auto;
+// 	height: 200px;
+// 	margin-bottom: 1em;
+// 	li {
+// 		&:first-child {
+// 			margin-top: .3em;
+// 		}
+// 	}
+// }
