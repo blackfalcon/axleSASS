@@ -6,155 +6,64 @@
 
 @font-face { font-family: 'ChivoRegular'; src: url("/public/styles/CSS/font_libraries/chivo-regular-webfont.eot"); src: url("/public/styles/CSS/font_libraries/chivo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/public/styles/CSS/font_libraries/chivo-regular-webfont.woff") format("woff"), url("/public/styles/CSS/font_libraries/chivo-regular-webfont.ttf") format("truetype"), url("/public/styles/CSS/font_libraries/chivo-regular-webfont.svg#ChivoRegular") format("svg"); font-weight: normal; font-style: normal; }
 
-.heading_font_family, .kn_mini_logo { font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; }
+.heading_font_family { font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; }
 
-.web_font_alpha, .countdown { font-family: "DigitaldreamFatRegular", Arial, sans-serif; }
+.web_font_alpha { font-family: "DigitaldreamFatRegular", Arial, sans-serif; }
 
-.web_font_bravo, .ticking_clock p, .obstacle_header { font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; }
+.web_font_bravo { font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; }
 
-.headings_1, .headings_2, .headings_3, .ticking_clock p, .obstacle_header p:first-child, .kn_mini_logo { font-size: 3.714em; line-height: 1.5em; font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; margin-bottom: 0; font-weight: normal; }
+.headings_1, .headings_2, .headings_3 { font-size: 3.714em; line-height: 1.5em; font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; margin-bottom: 0; font-weight: normal; }
 
 .headings_2 { font-family: "ChivoRegular", Arial, sans-serif; font-size: 1.571em; }
 
-.headings_3, .ticking_clock p, .obstacle_header p:first-child { font-size: 2.857em; color: white; -moz-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -webkit-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -o-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -ms-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; margin-bottom: 1.25em; float: left; }
+.headings_3 { font-size: 2.857em; color: white; -moz-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -webkit-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -o-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -ms-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; margin-bottom: 1.25em; float: left; }
 
 .medium { font-size: 1em; font-weight: inherit; line-height: 1.5em; }
 
-.x_large, .obstacle_header p:last-child { font-size: 1.429em; font-weight: inherit; line-height: 1.5em; }
+.x_large { font-size: 1.429em; font-weight: inherit; line-height: 1.5em; }
 
-.xx_large, footer h5 { font-size: 1.714em; font-weight: inherit; line-height: 1.5em; }
+.xx_large { font-size: 1.714em; font-weight: inherit; line-height: 1.5em; }
 
 .xxx_large { font-size: 1.857em; font-weight: inherit; line-height: 1.5em; }
 
-.primary_text_shadow, .countdown { -moz-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -webkit-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -o-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -ms-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; }
+.primary_text_shadow { -moz-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -webkit-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -o-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -ms-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; }
 
-.clearfix, .tripple_dare_logo, .button_nav, .ticking_clock, footer, footer ul, .styleguide .axle_body, .styleguide .axle_body .axle_header, .styleguide .axle_body .axle_instructions, .styleguide .grid_960, .styleguide .grid_320, .styleguide .grid_760, .styleguide .grid_960 ul, .styleguide .grid_320 ul, .styleguide .grid_760 ul { zoom: 1; }
-.clearfix:before, .tripple_dare_logo:before, .button_nav:before, .ticking_clock:before, footer:before, footer ul:before, .styleguide .axle_body:before, .styleguide .axle_body .axle_header:before, .styleguide .axle_body .axle_instructions:before, .styleguide .grid_960:before, .styleguide .grid_320:before, .styleguide .grid_760:before, .styleguide .grid_960 ul:before, .styleguide .grid_320 ul:before, .styleguide .grid_760 ul:before { content: "\0020"; display: block; height: 0; overflow: hidden; }
-.clearfix:after, .tripple_dare_logo:after, .button_nav:after, .ticking_clock:after, footer:after, footer ul:after, .styleguide .axle_body:after, .styleguide .axle_body .axle_header:after, .styleguide .axle_body .axle_instructions:after, .styleguide .grid_960:after, .styleguide .grid_320:after, .styleguide .grid_760:after, .styleguide .grid_960 ul:after, .styleguide .grid_320 ul:after, .styleguide .grid_760 ul:after { content: "\0020"; display: block; height: 0; overflow: hidden; clear: both; }
+.clearfix, .styleguide .axle_body, .styleguide .axle_body .axle_header, .styleguide .axle_body .axle_instructions, .styleguide .grid_960, .styleguide .grid_320, .styleguide .grid_760, .styleguide .grid_960 ul, .styleguide .grid_320 ul, .styleguide .grid_760 ul { zoom: 1; }
+.clearfix:before, .styleguide .axle_body:before, .styleguide .axle_body .axle_header:before, .styleguide .axle_body .axle_instructions:before, .styleguide .grid_960:before, .styleguide .grid_320:before, .styleguide .grid_760:before, .styleguide .grid_960 ul:before, .styleguide .grid_320 ul:before, .styleguide .grid_760 ul:before { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after, .styleguide .axle_body:after, .styleguide .axle_body .axle_header:after, .styleguide .axle_body .axle_instructions:after, .styleguide .grid_960:after, .styleguide .grid_320:after, .styleguide .grid_760:after, .styleguide .grid_960 ul:after, .styleguide .grid_320 ul:after, .styleguide .grid_760 ul:after { content: "\0020"; display: block; height: 0; overflow: hidden; clear: both; }
 
-.standard_border_radius, .button_nav li a { -moz-border-radius: 0.429em; -webkit-border-radius: 0.429em; -o-border-radius: 0.429em; -ms-border-radius: 0.429em; border-radius: 0.429em; }
-.ie8 .standard_border_radius, .ie8 .button_nav li a, .button_nav li .ie8 a, .ie7 .standard_border_radius, .ie7 .button_nav li a, .button_nav li .ie7 a, .ie6 .standard_border_radius, .ie6 .button_nav li a, .button_nav li .ie6 a { -moz-border-radius: 0; -webkit-border-radius: 0; -o-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
+.standard_border_radius { -moz-border-radius: 0.429em; -webkit-border-radius: 0.429em; -o-border-radius: 0.429em; -ms-border-radius: 0.429em; border-radius: 0.429em; }
+.ie8 .standard_border_radius, .ie7 .standard_border_radius, .ie6 .standard_border_radius { -moz-border-radius: 0; -webkit-border-radius: 0; -o-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
 
 .primary_box_shadow { -moz-box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; -webkit-box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; -o-box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; -ms-box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; }
 
-.center_grid_12_2, .kn_mini_logo { width: 10em; margin: 0 auto; }
+.center_grid_12_2 { width: 10em; margin: 0 auto; }
 
-.center_grid_12_8, footer ul { width: 44.286em; margin: 0 auto; }
+.center_grid_12_8 { width: 44.286em; margin: 0 auto; }
 
-.center_grid_12_12, .triple_dare_header, footer { width: 67.143em; margin: 0 auto; }
+.center_grid_12_12 { width: 67.143em; margin: 0 auto; }
 
 .grid_12_2 { display: inline; float: left; margin: 0 0.714em; width: 10em; }
 
-.grid_12_3, .button_nav li { display: inline; float: left; margin: 0 0.714em; width: 15.714em; }
+.grid_12_3 { display: inline; float: left; margin: 0 0.714em; width: 15.714em; }
 
-.grid_12_4, footer li { display: inline; float: left; margin: 0 0.714em; width: 21.429em; }
+.grid_12_4 { display: inline; float: left; margin: 0 0.714em; width: 21.429em; }
 
 .grid_12_5 { display: inline; float: left; margin: 0 0.714em; width: 27.143em; }
 
-.grid_12_6, .button_nav, .image_grid li, .prizes_grid li, .the_obstacles { display: inline; float: left; margin: 0 0.714em; width: 32.857em; }
+.grid_12_6 { display: inline; float: left; margin: 0 0.714em; width: 32.857em; }
 
-.grid_12_7, .tripple_dare_logo, .ticking_clock { display: inline; float: left; margin: 0 0.714em; width: 38.571em; }
+.grid_12_7 { display: inline; float: left; margin: 0 0.714em; width: 38.571em; }
 
-.push_12_2, .tripple_dare_logo { left: 11.429em; position: relative; }
+.push_12_2 { left: 11.429em; position: relative; }
 
-.alpha, .button_nav, .button_nav li:nth-child(odd), .image_grid li:nth-child(odd), .prizes_grid li:nth-child(odd), footer li:nth-child(odd) { margin-left: 0; }
+.alpha { margin-left: 0; }
 
-.omega, .button_nav li:nth-child(even), .image_grid li:nth-child(even), .prizes_grid li:nth-child(even), .ticking_clock, .the_obstacles, footer li:nth-child(even) { margin-right: 0; }
+.omega { margin-right: 0; }
 
-.primary_site_navigation { width: 100%; position: fixed; top: 0; background: rgba(52, 52, 52, 0.1); height: 2.143em; line-height: 2.143em; z-index: 100; text-transform: uppercase; font-weight: bold; }
-.ie8 .primary_site_navigation, .ie7 .primary_site_navigation { background: gray; }
-.primary_site_navigation nav { margin: 0 auto; width: 44.286em; }
-.ie .primary_site_navigation nav { width: 45em; }
-.primary_site_navigation ul { display: -moz-box; -moz-box-orient: horizontal; -moz-box-pack: center; -moz-box-align: center; display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: center; display: -o-box; -o-box-orient: horizontal; -o-box-pack: center; -o-box-align: center; display: -ms-box; -ms-box-orient: horizontal; -ms-box-pack: center; -ms-box-align: center; display: box; box-orient: horizontal; box-pack: center; box-align: center; height: auto; width: 100%; }
-.primary_site_navigation ul li { -moz-box-flex: 1; -webkit-box-flex: 1; -o-box-flex: 1; -ms-box-flex: 1; box-flex: 1; text-align: center; }
-.ie8 .primary_site_navigation ul li, .ie7 .primary_site_navigation ul li { padding: 0 1.429em; }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { .primary_site_navigation { font-size: 1.6em; } }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { .primary_site_navigation { font-size: 1.6em; } }
+.inner_widget, .grid_12_col_background_shift, .grid_16_col_background_shift { background-position: -10px 0 !important; }
 
-.tripple_dare_logo { height: 31.929em; background: url(/public/images/TD_logo.png) no-repeat 55.5% 47.5%, url(/public/images/green_slime_spot.png) no-repeat 50% 50%; text-indent: -999px; margin-top: 2.857em; }
-.ie8 .tripple_dare_logo, .ie7 .tripple_dare_logo { background: url(/public/images/TD_logo_composite.png) no-repeat 50% 50%; }
-.gecko .tripple_dare_logo, .ie .tripple_dare_logo { color: transparent; }
-
-.triple_dare_header hgroup { width: 100%; float: left; text-align: center; }
-.triple_dare_header h1 { color: #fe6638; -moz-text-shadow: white 3px 3px 0; -webkit-text-shadow: white 3px 3px 0; -o-text-shadow: white 3px 3px 0; -ms-text-shadow: white 3px 3px 0; text-shadow: white 3px 3px 0; }
-.triple_dare_header h2 { color: white; }
-
-.button_nav li { height: 15.786em; margin-bottom: 1.429em; }
-.button_nav li a { background: url(/public/images/obstacles.gif) no-repeat #80b238 -13.857em -16.357em; background-size: 42.857em; display: block; line-height: 29.286em; height: 15.857em; }
-.button_nav li a:hover { text-decoration: none; }
-.button_nav li a:hover { background-color: #eef13f; color: #fe6638; cursor: pointer; }
-.button_nav li a.selected { background-color: #eef13f; color: #fe6638; }
-.button_nav li[data-obstacle-name=sunday_slide] a { background-position: 0.571em -16.5em; }
-.button_nav li[data-obstacle-name=hamster_wheel] a { background-position: -14.357em -0.286em; }
-.button_nav li[data-obstacle-name=down_the_hatch] a { background-position: 0.643em 0em; }
-.button_nav li[data-obstacle-name=wringer] a { background-position: -28.143em -17.143em; }
-.button_nav li[data-obstacle-name=pick_it] a { background-position: -29.214em -0.214em; }
-
-.checker_deco_spacing, .obstacles .checker_deco, .prizes .checker_deco, .contest_form .checker_deco { margin: 1.071em 0 3.929em 2.857em; }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { .checker_deco_spacing, .obstacles .checker_deco, .prizes .checker_deco, .contest_form .checker_deco { margin-bottom: 4em; } }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { .checker_deco_spacing, .obstacles .checker_deco, .prizes .checker_deco, .contest_form .checker_deco { margin-bottom: 4em; } }
-
-.checker_deco { display: inline; float: left; height: 2.857em; overflow: hidden; }
-.ie .checker_deco { border: 1px solid transparent; }
-.obstacles .checker_deco { width: 47.143em; }
-.prizes .checker_deco { width: 52.857em; }
-.contest_form .checker_deco { width: 35.714em; }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { .checker_deco { height: 2.786em; } }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { .checker_deco { height: 2.786em; } }
-.checker_deco span { width: 1.429em; height: 1.429em; display: block; background: #eef13f; float: left; }
-.checker_deco span:nth-child(even) { background: transparent; }
-
-.image_grid li, .prizes_grid li { margin-bottom: 1.429em; }
-
-.kn_mini_logo { height: 1.635em; background: url(/public/images/mini_logo_bkg.gif) no-repeat 50% 50%; text-align: center; position: relative; top: -1.635em; margin-bottom: -1.25em; }
-
-.cc_logo { width: 6.286em; height: 2.214em; background: url(/public/images/cc_logo.gif); margin: 0 auto; }
-
-.ticking_clock { height: 24.286em; background: url(/public/images/clock_bkg.gif) no-repeat 80% 50%; }
-.ticking_clock p { color: white; line-height: 1.3em; width: 6em; margin: 0 auto; text-align: center; position: relative; top: 8.75em; left: 4.857em; position: relative; }
-
-.countdown { display: block; font-size: 10em; color: #eef13f; position: relative; top: 155px; left: 1.393em; width: 1.786em; }
-
-#sunday_slide, #hamster_wheel, #down_the_hatch, #pick_it, #wringer { display: none; }
-
-.obstacle_header { letter-spacing: 2px; color: white; -moz-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -webkit-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -o-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -ms-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; background: url(/public/images/green_slime_spot.png) no-repeat 50% 50%; -moz-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); -o-transform: rotate(-7deg); -ms-transform: rotate(-7deg); transform: rotate(-7deg); background-size: 12.929em; width: 30em; height: 15.429em; background-size: 17.857em; text-align: center; left: 1.714em; position: relative; }
-.obstacle_header p { position: relative; }
-.obstacle_header p:first-child { margin-bottom: 0; top: 1.375em; width: 100%; line-height: 1em; }
-.obstacle_header p:last-child { top: 2.75em; }
-
-.each_obstacle { background: url(/public/images/obstacles.gif) no-repeat -35px -25px; background-size: 1800px; width: 100%; height: 510px; }
-.each_obstacle.the_tank { background-position: -569px -612px; background-size: 1588px; }
-.each_obstacle.sunday_slide { background-position: -51px -625px; background-size: 1625px; }
-.each_obstacle.hamster_wheel { background-position: -570px -31px; background-size: 1530px; }
-.each_obstacle.down_the_hatch { background-position: -35px -58px; }
-.each_obstacle.pick_it { background-position: -1221px -30px; background-size: 1665px; }
-.each_obstacle.wringer { background-position: -1101px -632px; background-size: 1567px; }
-
-.prizes_grid { margin-bottom: -175px; float: left; }
-.prizes_grid p { position: relative; }
-.prizes_grid li { background: url(/public/images/prizes_sprite.gif) no-repeat 0px 0px; }
-.prizes_grid li[data-prize-name=space_camp] { background-position: 0px 0px; height: 390px; }
-.prizes_grid li[data-prize-name=space_camp] p { bottom: -27.857em; }
-.prizes_grid li[data-prize-name=sk8_board] { background-position: -490px 0px; height: 240px; }
-.prizes_grid li[data-prize-name=sk8_board] p { bottom: -17.143em; }
-.prizes_grid li[data-prize-name=keyboard] { background-position: 0px -490px; height: 190px; position: relative; top: 225px; left: -460px; }
-.prizes_grid li[data-prize-name=keyboard] p { bottom: -13.571em; }
-.prizes_grid li[data-prize-name=tv_vcr] { background-position: -455px -320px; height: 390px; position: relative; left: 463px; top: -185px; }
-.prizes_grid li[data-prize-name=tv_vcr] p { bottom: -27.857em; }
-
-footer { padding-bottom: 3.571em; color: white; }
-footer .box_shadow { margin-bottom: 2.857em; }
-footer .box_shadow:last-child { margin-bottom: 0em; }
-footer h5 { text-align: center; margin-bottom: 0.3em; }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { footer h5 { font-size: 1.857em; font-weight: inherit; line-height: 1.5em; } }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { footer h5 { font-size: 1.857em; font-weight: inherit; line-height: 1.5em; } }
-footer p { text-align: center; }
-footer ul { margin-bottom: 2.143em; }
-footer li:nth-child(odd) { text-align: right; }
-footer li:nth-child(even) { text-align: left; }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { footer li { font-size: 1.429em; font-weight: inherit; line-height: 1.5em; width: 13.6em; }
-  footer p { font-size: 1.429em; font-weight: inherit; line-height: 1.5em; } }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { footer li { font-size: 1.143em; font-weight: inherit; line-height: 1.5em; width: 17.6em; } }
+.grid_12_col_background, .grid_12_col_background_shift, .grid_16_col_background, .grid_16_col_background_shift { background: url(/axle/images/12_col.gif); }
 
 body { margin: 0; }
 
