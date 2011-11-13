@@ -32,36 +32,13 @@
 	<section class="site_container">
 		
 		<header>
-			<h1>site header</h1>
+			<h1>HEY!!! Awesome, you found my dongle!</h1>
+			<h2>Crap, I was wondering where I left that.</h2>
 		</header>
-		
-		<section class="left">
-			left nav?
+		<section>
+			<p>You are holding my mini-dvi dongle. Now that you have it, the choice is yours and yours alone. Do you choose to be awesome and return it? Or do you choose to be a total douche and keep it? Remember, karma is a total BITCH!</p>
 		</section>
-		
-		<section class="right">
-			
-			<header>
-				<h1>page header</h1>
-			</header>
-			
-			<article>
-				
-				<header>
-					<h1>article header</h1>
-				</header>
-				
-				<aside>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</aside>
-				
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				
-				<footer>article footer</footer>
-			
-			</article>
-		
-		</section>
-		
-		<footer>site footer</footer>
+		<footer>Thanks!</footer>
 	
 	</section>
 </body>
