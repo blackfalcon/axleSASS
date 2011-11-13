@@ -6,25 +6,147 @@
 
 @font-face { font-family: 'ChivoRegular'; src: url("/public/styles/CSS/font_libraries/chivo-regular-webfont.eot"); src: url("/public/styles/CSS/font_libraries/chivo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/public/styles/CSS/font_libraries/chivo-regular-webfont.woff") format("woff"), url("/public/styles/CSS/font_libraries/chivo-regular-webfont.ttf") format("truetype"), url("/public/styles/CSS/font_libraries/chivo-regular-webfont.svg#ChivoRegular") format("svg"); font-weight: normal; font-style: normal; }
 
+.white { background-color: white; }
+
+.alpha_grey { background-color: #010101; }
+
+.bravo_grey { background-color: #1a1a1a; }
+
+.charlie_grey { background-color: #343434; }
+
+.delta_grey { background-color: #4d4d4d; }
+
+.echo_grey { background-color: #676767; }
+
+.fox_grey { background-color: gray; }
+
+.golf_grey { background-color: #999999; }
+
+.hotel_grey { background-color: #b3b3b3; }
+
+.india_grey { background-color: #cccccc; }
+
+.kilo_grey { background-color: white; }
+
+.alpha_color { background-color: #a72029; }
+
+.alpha_color_bravo { background-color: #c1252f; }
+
+.alpha_color_charlie { background-color: #d72e39; }
+
+.alpha_color_delta { background-color: #dc4852; }
+
+.alpha_color_echo { background-color: #e1626b; }
+
+.alpha_color_fox { background-color: #e67d84; }
+
+.alpha_color_golf { background-color: #eb979c; }
+
+.alpha_color_hotel { background-color: #f0b1b5; }
+
+.alpha_color_india { background-color: #f5cbce; }
+
+.alpha_color_juliet { background-color: #fae5e6; }
+
+.bravo_color { background-color: #80b238; }
+
+.bravo_color_bravo { background-color: #8ec442; }
+
+.bravo_color_charlie { background-color: #9bca57; }
+
+.bravo_color_delta { background-color: #a7d16c; }
+
+.bravo_color_echo { background-color: #b4d781; }
+
+.bravo_color_fox { background-color: #c0de96; }
+
+.bravo_color_golf { background-color: #cde5ab; }
+
+.bravo_color_hotel { background-color: #d9ebc0; }
+
+.bravo_color_india { background-color: #e6f2d5; }
+
+.bravo_color_juliet { background-color: #f2f8ea; }
+
+.charlie_color { background-color: #eef13f; }
+
+.charlie_color_bravo { background-color: #f0f252; }
+
+.charlie_color_charlie { background-color: #f1f465; }
+
+.charlie_color_delta { background-color: #f3f579; }
+
+.charlie_color_echo { background-color: #f5f78c; }
+
+.charlie_color_fox { background-color: #f7f89f; }
+
+.charlie_color_golf { background-color: #f8f9b2; }
+
+.charlie_color_hotel { background-color: #fafbc5; }
+
+.charlie_color_india { background-color: #fcfcd9; }
+
+.charlie_color_juliet { background-color: #fdfeec; }
+
+.delta_color { background-color: #80c1d6; }
+
+.delta_color_bravo { background-color: #8dc7da; }
+
+.delta_color_charlie { background-color: #99cdde; }
+
+.delta_color_delta { background-color: #a6d4e2; }
+
+.delta_color_echo { background-color: #b3dae6; }
+
+.delta_color_fox { background-color: #c0e0eb; }
+
+.delta_color_golf { background-color: #cce6ef; }
+
+.delta_color_hotel { background-color: #d9ecf3; }
+
+.delta_color_india { background-color: #e6f3f7; }
+
+.delta_color_juliet { background-color: #f2f9fb; }
+
+.echo_color { background-color: #fe6638; }
+
+.echo_color_bravo { background-color: #fe754c; }
+
+.echo_color_charlie { background-color: #fe8560; }
+
+.echo_color_delta { background-color: #fe9474; }
+
+.echo_color_echo { background-color: #fea388; }
+
+.echo_color_fox { background-color: #ffb39b; }
+
+.echo_color_golf { background-color: #ffc2af; }
+
+.echo_color_hotel { background-color: #ffd1c3; }
+
+.echo_color_india { background-color: #ffe0d7; }
+
+.echo_color_juliet { background-color: #fff0eb; }
+
 .heading_font_family { font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; }
 
 .web_font_alpha { font-family: "DigitaldreamFatRegular", Arial, sans-serif; }
 
 .web_font_bravo { font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; }
 
-.headings_1, .headings_2, .headings_3 { font-size: 3.714em; line-height: 1.5em; font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; margin-bottom: 0; font-weight: normal; }
+.headings_1, .headings_2, .headings_3 { font-size: 4.167em; line-height: 1.5em; font-family: "KomikaTitle-PaintRegular", Arial, sans-serif; margin-bottom: 0; font-weight: normal; }
 
-.headings_2 { font-family: "ChivoRegular", Arial, sans-serif; font-size: 1.571em; }
+.headings_2 { font-family: verdana, sans-serif; font-size: 1.667em; }
 
-.headings_3 { font-size: 2.857em; color: white; -moz-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -webkit-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -o-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -ms-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; margin-bottom: 1.25em; float: left; }
+.headings_3 { font-size: 3.167em; color: white; -moz-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -webkit-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -o-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; -ms-text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; text-shadow: rgba(1, 1, 1, 0.3) 3px 3px 0; margin-bottom: 1.316em; float: left; }
 
 .medium { font-size: 1em; font-weight: inherit; line-height: 1.5em; }
 
-.x_large { font-size: 1.429em; font-weight: inherit; line-height: 1.5em; }
+.x_large { font-size: 1.667em; font-weight: inherit; line-height: 1.5em; }
 
-.xx_large { font-size: 1.714em; font-weight: inherit; line-height: 1.5em; }
+.xx_large { font-size: 2em; font-weight: inherit; line-height: 1.5em; }
 
-.xxx_large { font-size: 1.857em; font-weight: inherit; line-height: 1.5em; }
+.xxx_large { font-size: 2.167em; font-weight: inherit; line-height: 1.5em; }
 
 .primary_text_shadow { -moz-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -webkit-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -o-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; -ms-text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; text-shadow: rgba(1, 1, 1, 0.3) 10px 10px 0; }
 
@@ -32,30 +154,30 @@
 .clearfix:before, .styleguide .axle_body:before, .styleguide .axle_body .axle_header:before, .styleguide .axle_body .axle_instructions:before, .styleguide .grid_960:before, .styleguide .grid_320:before, .styleguide .grid_760:before, .styleguide .grid_960 ul:before, .styleguide .grid_320 ul:before, .styleguide .grid_760 ul:before { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after, .styleguide .axle_body:after, .styleguide .axle_body .axle_header:after, .styleguide .axle_body .axle_instructions:after, .styleguide .grid_960:after, .styleguide .grid_320:after, .styleguide .grid_760:after, .styleguide .grid_960 ul:after, .styleguide .grid_320 ul:after, .styleguide .grid_760 ul:after { content: "\0020"; display: block; height: 0; overflow: hidden; clear: both; }
 
-.standard_border_radius { -moz-border-radius: 0.429em; -webkit-border-radius: 0.429em; -o-border-radius: 0.429em; -ms-border-radius: 0.429em; border-radius: 0.429em; }
+.standard_border_radius { -moz-border-radius: 0.5em; -webkit-border-radius: 0.5em; -o-border-radius: 0.5em; -ms-border-radius: 0.5em; border-radius: 0.5em; }
 .ie8 .standard_border_radius, .ie7 .standard_border_radius, .ie6 .standard_border_radius { -moz-border-radius: 0; -webkit-border-radius: 0; -o-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
 
-.primary_box_shadow { -moz-box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; -webkit-box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; -o-box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; -ms-box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; box-shadow: rgba(1, 1, 1, 0.3) 0 0.143em 0.286em; }
+.primary_box_shadow { -moz-box-shadow: rgba(1, 1, 1, 0.3) 0 0.167em 0.333em; -webkit-box-shadow: rgba(1, 1, 1, 0.3) 0 0.167em 0.333em; -o-box-shadow: rgba(1, 1, 1, 0.3) 0 0.167em 0.333em; -ms-box-shadow: rgba(1, 1, 1, 0.3) 0 0.167em 0.333em; box-shadow: rgba(1, 1, 1, 0.3) 0 0.167em 0.333em; }
 
-.center_grid_12_2 { width: 10em; margin: 0 auto; }
+.center_grid_12_2 { width: 11.667em; margin: 0 auto; }
 
-.center_grid_12_8 { width: 44.286em; margin: 0 auto; }
+.center_grid_12_8 { width: 51.667em; margin: 0 auto; }
 
-.center_grid_12_12 { width: 67.143em; margin: 0 auto; }
+.center_grid_12_12 { width: 78.333em; margin: 0 auto; }
 
-.grid_12_2 { display: inline; float: left; margin: 0 0.714em; width: 10em; }
+.grid_12_2 { display: inline; float: left; margin: 0 0.833em; width: 11.667em; }
 
-.grid_12_3 { display: inline; float: left; margin: 0 0.714em; width: 15.714em; }
+.grid_12_3 { display: inline; float: left; margin: 0 0.833em; width: 18.333em; }
 
-.grid_12_4 { display: inline; float: left; margin: 0 0.714em; width: 21.429em; }
+.grid_12_4 { display: inline; float: left; margin: 0 0.833em; width: 25em; }
 
-.grid_12_5 { display: inline; float: left; margin: 0 0.714em; width: 27.143em; }
+.grid_12_5 { display: inline; float: left; margin: 0 0.833em; width: 31.667em; }
 
-.grid_12_6 { display: inline; float: left; margin: 0 0.714em; width: 32.857em; }
+.grid_12_6 { display: inline; float: left; margin: 0 0.833em; width: 38.333em; }
 
-.grid_12_7 { display: inline; float: left; margin: 0 0.714em; width: 38.571em; }
+.grid_12_7 { display: inline; float: left; margin: 0 0.833em; width: 45em; }
 
-.push_12_2 { left: 11.429em; position: relative; }
+.push_12_2 { left: 13.333em; position: relative; }
 
 .alpha { margin-left: 0; }
 
@@ -76,13 +198,13 @@ body { margin: 0; }
 .styleguide a { color: #80c1d6; }
 .styleguide .axle_instructions { display: block; }
 .styleguide code { padding: 3px 6px; border: 1px solid #010101; white-space: nowrap; color: #010101; }
-.styleguide pre { -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; border-radius: 10px; font-size: 1.143em; font-weight: inherit; line-height: 1.5em; margin-bottom: 20px; padding: 20px 20px 0 20px; }
+.styleguide pre { -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; border-radius: 10px; font-size: 1.333em; font-weight: inherit; line-height: 1.5em; margin-bottom: 20px; padding: 20px 20px 0 20px; }
 .styleguide .button_styleguide div { padding-bottom: 10px; }
 .styleguide .form_styleguide pre { overflow: auto; margin-left: 0px; }
 .styleguide .form_styleguide .master_container { float: left; width: 100%; }
 .styleguide .axle_header, .styleguide .axle_body .axle_instructions { width: 100%; }
 .styleguide .axle_header h1, .styleguide .axle_body .axle_instructions h1 { color: #fff; padding: 10px 20px; background: #b8e1fc; background: -webkit-linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); background: -moz-linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); background: 0 -linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); background: -ms-linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8e1fc), color-stop(10%, #a9d2f3), color-stop(25%, #90bae4), color-stop(37%, #90bcea), color-stop(50%, #90bff0), color-stop(51%, #6ba8e5), color-stop(83%, #a2daf5), color-stop(100%, #bdf3fd)); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#b8e1fc', endColorstr='#bdf3fd'); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e1fc', endColorstr='#bdf3fd')"; border-bottom: 1px solid #010101; -moz-box-shadow: rgba(1, 1, 1, 0.3) 0px 0px 40px; -webkit-box-shadow: rgba(1, 1, 1, 0.3) 0px 0px 40px; -o-box-shadow: rgba(1, 1, 1, 0.3) 0px 0px 40px; -ms-box-shadow: rgba(1, 1, 1, 0.3) 0px 0px 40px; box-shadow: rgba(1, 1, 1, 0.3) 0px 0px 40px; font-family: 'Pacifico', arial, serif; font-size: 3em; line-height: 1.5em; }
-.styleguide .axle_body { float: none; width: 68.571em; margin: 0 auto; }
+.styleguide .axle_body { float: none; width: 80em; margin: 0 auto; }
 .styleguide .axle_body .axle_header, .styleguide .axle_body .axle_instructions { color: #999; border: 1px solid #999; border-width: 0 0 1px 0; margin: 30px 0 10px 0; float: left; width: 100%; padding-bottom: 1em; }
 .styleguide .axle_body .axle_instructions { border-width: 0; color: #313131; padding-top: 10px; }
 .styleguide .axle_body .headings_ellipsis h1, .styleguide .axle_body .headings_ellipsis h2, .styleguide .axle_body .headings_ellipsis h3, .styleguide .axle_body .headings_ellipsis h4, .styleguide .axle_body .headings_ellipsis h5 { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; float: left; width: 980px; }
@@ -101,7 +223,7 @@ body { margin: 0; }
 .styleguide .gradient .alpha_color_gradient p { color: #010101; }
 .styleguide .login_body { margin: 0 0 30px 0; padding: 0; }
 .styleguide .styleguide_nav { position: fixed; z-index: 1000; border: 1px solid #ccc; left: -157px; top: 100px; width: 120px; padding: 10px 20px 10px 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px; -moz-box-shadow: #cccccc 0px 0px 20px; -webkit-box-shadow: #cccccc 0px 0px 20px; -o-box-shadow: #cccccc 0px 0px 20px; -ms-box-shadow: #cccccc 0px 0px 20px; box-shadow: #cccccc 0px 0px 20px; -moz-transition: all 0.5s ease-in-out 0s; -webkit-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; transition: all 0.5s ease-in-out 0s; background-color: #fff; }
-.styleguide .styleguide_nav .nav_title { -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -o-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); position: absolute; top: 0px; left: 35px; font-size: 1.429em; font-weight: inherit; line-height: 1.5em; padding: 60px 100px 100px 100px; letter-spacing: 4px; }
+.styleguide .styleguide_nav .nav_title { -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -o-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); position: absolute; top: 0px; left: 35px; font-size: 1.667em; font-weight: inherit; line-height: 1.5em; padding: 60px 100px 100px 100px; letter-spacing: 4px; }
 .styleguide .styleguide_nav ul { margin-top: 5px; }
 .styleguide .styleguide_nav ul li { padding: 3px; margin-left: 10px; }
 .styleguide .styleguide_nav ul a { display: block; }
@@ -133,53 +255,53 @@ body { margin: 0; }
 .styleguide .mark_color { background-color: #eef13f; }
 .styleguide .selection_color { background-color: #eef13f; }
 .styleguide .selection_text_color { background-color: #1a1a1a; }
-.styleguide .grid_960, .styleguide .grid_320, .styleguide .grid_760 { background: url(/axle/images/12_col.gif) repeat-y; width: 68.571em; text-align: center; margin: 10px 0; float: left; font-weight: bold; }
+.styleguide .grid_960, .styleguide .grid_320, .styleguide .grid_760 { background: url(/axle/images/12_col.gif) repeat-y; width: 80em; text-align: center; margin: 10px 0; float: left; font-weight: bold; }
 .styleguide .grid_960 ul, .styleguide .grid_320 ul, .styleguide .grid_760 ul { margin: 1em 0; }
 .styleguide .grid_960 ul li, .styleguide .grid_320 ul li, .styleguide .grid_760 ul li { background: fadeout(#cccccc, 50%); -moz-box-shadow: inset 0 0 10px #010101; -webkit-box-shadow: inset 0 0 10px #010101; -o-box-shadow: inset 0 0 10px #010101; -ms-box-shadow: inset 0 0 10px #010101; box-shadow: inset 0 0 10px #010101; padding: 5px 0; }
 .styleguide .grid_960.col_16, .styleguide .col_16.grid_320, .styleguide .col_16.grid_760 { background: url(/axle/images/16_col.gif) repeat-y; }
-.styleguide .grid_320 { width: 22.857em; margin-right: 45.714em; }
-.styleguide .grid_760 { width: 54em; margin-right: 14.286em; }
+.styleguide .grid_320 { width: 26.667em; margin-right: 53.333em; }
+.styleguide .grid_760 { width: 63em; margin-right: 16.667em; }
 .styleguide .grid_760.col_12_ipad { background: url(/axle/images/10_col.png) repeat-y; }
-.styleguide .grid-1 { display: inline; float: left; margin: 0 0.714em; width: 4.286em; }
-.styleguide .grid-2 { display: inline; float: left; margin: 0 0.714em; width: 10em; }
-.styleguide .grid-3 { display: inline; float: left; margin: 0 0.714em; width: 15.714em; }
-.styleguide .grid-4 { display: inline; float: left; margin: 0 0.714em; width: 21.429em; }
-.styleguide .grid-5 { display: inline; float: left; margin: 0 0.714em; width: 27.143em; }
-.styleguide .grid-6 { display: inline; float: left; margin: 0 0.714em; width: 32.857em; }
-.styleguide .grid-7 { display: inline; float: left; margin: 0 0.714em; width: 38.571em; }
-.styleguide .grid-8 { display: inline; float: left; margin: 0 0.714em; width: 44.286em; }
-.styleguide .grid-9 { display: inline; float: left; margin: 0 0.714em; width: 50em; }
-.styleguide .grid-10 { display: inline; float: left; margin: 0 0.714em; width: 55.714em; }
-.styleguide .grid-11 { display: inline; float: left; margin: 0 0.714em; width: 61.429em; }
-.styleguide .grid-12 { display: inline; float: left; margin: 0 0.714em; width: 67.143em; }
-.styleguide .grid-16-1 { display: inline; float: left; margin: 0 0.714em; width: 2.857em; }
-.styleguide .grid-16-2 { display: inline; float: left; margin: 0 0.714em; width: 7.143em; }
-.styleguide .grid-16-3 { display: inline; float: left; margin: 0 0.714em; width: 11.429em; }
-.styleguide .grid-16-4 { display: inline; float: left; margin: 0 0.714em; width: 15.714em; }
-.styleguide .grid-16-5 { display: inline; float: left; margin: 0 0.714em; width: 20em; }
-.styleguide .grid-16-6 { display: inline; float: left; margin: 0 0.714em; width: 24.286em; }
-.styleguide .grid-16-7 { display: inline; float: left; margin: 0 0.714em; width: 28.571em; }
-.styleguide .grid-16-8 { display: inline; float: left; margin: 0 0.714em; width: 32.857em; }
-.styleguide .grid-16-9 { display: inline; float: left; margin: 0 0.714em; width: 37.143em; }
-.styleguide .grid-16-10 { display: inline; float: left; margin: 0 0.714em; width: 41.429em; }
-.styleguide .grid-16-11 { display: inline; float: left; margin: 0 0.714em; width: 45.714em; }
-.styleguide .grid-16-12 { display: inline; float: left; margin: 0 0.714em; width: 50em; }
-.styleguide .grid-16-13 { display: inline; float: left; margin: 0 0.714em; width: 54.286em; }
-.styleguide .grid-16-14 { display: inline; float: left; margin: 0 0.714em; width: 58.571em; }
-.styleguide .grid-16-15 { display: inline; float: left; margin: 0 0.714em; width: 62.857em; }
-.styleguide .grid-16-16 { display: inline; float: left; margin: 0 0.714em; width: 67.143em; }
-.styleguide .grid-ipad-12-1 { display: inline; float: left; margin: 0 0.714em; width: 3.071em; }
-.styleguide .grid-ipad-12-2 { display: inline; float: left; margin: 0 0.714em; width: 7.571em; }
-.styleguide .grid-ipad-12-3 { display: inline; float: left; margin: 0 0.714em; width: 12.071em; }
-.styleguide .grid-ipad-12-4 { display: inline; float: left; margin: 0 0.714em; width: 16.571em; }
-.styleguide .grid-ipad-12-5 { display: inline; float: left; margin: 0 0.714em; width: 21.071em; }
-.styleguide .grid-ipad-12-6 { display: inline; float: left; margin: 0 0.714em; width: 25.571em; }
-.styleguide .grid-ipad-12-7 { display: inline; float: left; margin: 0 0.714em; width: 30.071em; }
-.styleguide .grid-ipad-12-8 { display: inline; float: left; margin: 0 0.714em; width: 34.571em; }
-.styleguide .grid-ipad-12-9 { display: inline; float: left; margin: 0 0.714em; width: 39.071em; }
-.styleguide .grid-ipad-12-10 { display: inline; float: left; margin: 0 0.714em; width: 43.571em; }
-.styleguide .grid-ipad-12-11 { display: inline; float: left; margin: 0 0.714em; width: 48.071em; }
-.styleguide .grid-ipad-12-12 { display: inline; float: left; margin: 0 0.714em; width: 52.571em; }
+.styleguide .grid-1 { display: inline; float: left; margin: 0 0.833em; width: 5em; }
+.styleguide .grid-2 { display: inline; float: left; margin: 0 0.833em; width: 11.667em; }
+.styleguide .grid-3 { display: inline; float: left; margin: 0 0.833em; width: 18.333em; }
+.styleguide .grid-4 { display: inline; float: left; margin: 0 0.833em; width: 25em; }
+.styleguide .grid-5 { display: inline; float: left; margin: 0 0.833em; width: 31.667em; }
+.styleguide .grid-6 { display: inline; float: left; margin: 0 0.833em; width: 38.333em; }
+.styleguide .grid-7 { display: inline; float: left; margin: 0 0.833em; width: 45em; }
+.styleguide .grid-8 { display: inline; float: left; margin: 0 0.833em; width: 51.667em; }
+.styleguide .grid-9 { display: inline; float: left; margin: 0 0.833em; width: 58.333em; }
+.styleguide .grid-10 { display: inline; float: left; margin: 0 0.833em; width: 65em; }
+.styleguide .grid-11 { display: inline; float: left; margin: 0 0.833em; width: 71.667em; }
+.styleguide .grid-12 { display: inline; float: left; margin: 0 0.833em; width: 78.333em; }
+.styleguide .grid-16-1 { display: inline; float: left; margin: 0 0.833em; width: 3.333em; }
+.styleguide .grid-16-2 { display: inline; float: left; margin: 0 0.833em; width: 8.333em; }
+.styleguide .grid-16-3 { display: inline; float: left; margin: 0 0.833em; width: 13.333em; }
+.styleguide .grid-16-4 { display: inline; float: left; margin: 0 0.833em; width: 18.333em; }
+.styleguide .grid-16-5 { display: inline; float: left; margin: 0 0.833em; width: 23.333em; }
+.styleguide .grid-16-6 { display: inline; float: left; margin: 0 0.833em; width: 28.333em; }
+.styleguide .grid-16-7 { display: inline; float: left; margin: 0 0.833em; width: 33.333em; }
+.styleguide .grid-16-8 { display: inline; float: left; margin: 0 0.833em; width: 38.333em; }
+.styleguide .grid-16-9 { display: inline; float: left; margin: 0 0.833em; width: 43.333em; }
+.styleguide .grid-16-10 { display: inline; float: left; margin: 0 0.833em; width: 48.333em; }
+.styleguide .grid-16-11 { display: inline; float: left; margin: 0 0.833em; width: 53.333em; }
+.styleguide .grid-16-12 { display: inline; float: left; margin: 0 0.833em; width: 58.333em; }
+.styleguide .grid-16-13 { display: inline; float: left; margin: 0 0.833em; width: 63.333em; }
+.styleguide .grid-16-14 { display: inline; float: left; margin: 0 0.833em; width: 68.333em; }
+.styleguide .grid-16-15 { display: inline; float: left; margin: 0 0.833em; width: 73.333em; }
+.styleguide .grid-16-16 { display: inline; float: left; margin: 0 0.833em; width: 78.333em; }
+.styleguide .grid-ipad-12-1 { display: inline; float: left; margin: 0 0.833em; width: 3.583em; }
+.styleguide .grid-ipad-12-2 { display: inline; float: left; margin: 0 0.833em; width: 8.833em; }
+.styleguide .grid-ipad-12-3 { display: inline; float: left; margin: 0 0.833em; width: 14.083em; }
+.styleguide .grid-ipad-12-4 { display: inline; float: left; margin: 0 0.833em; width: 19.333em; }
+.styleguide .grid-ipad-12-5 { display: inline; float: left; margin: 0 0.833em; width: 24.583em; }
+.styleguide .grid-ipad-12-6 { display: inline; float: left; margin: 0 0.833em; width: 29.833em; }
+.styleguide .grid-ipad-12-7 { display: inline; float: left; margin: 0 0.833em; width: 35.083em; }
+.styleguide .grid-ipad-12-8 { display: inline; float: left; margin: 0 0.833em; width: 40.333em; }
+.styleguide .grid-ipad-12-9 { display: inline; float: left; margin: 0 0.833em; width: 45.583em; }
+.styleguide .grid-ipad-12-10 { display: inline; float: left; margin: 0 0.833em; width: 50.833em; }
+.styleguide .grid-ipad-12-11 { display: inline; float: left; margin: 0 0.833em; width: 56.083em; }
+.styleguide .grid-ipad-12-12 { display: inline; float: left; margin: 0 0.833em; width: 61.333em; }
 
 .inner_widget, .grid_12_col_background_shift, .grid_16_col_background_shift { background-position: -10px 0 !important; }
 
