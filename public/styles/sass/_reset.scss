@@ -1,6 +1,6 @@
 // Google Font Imports
 // ----------------------------------------------------------------------
-//@import url(http://fonts.googleapis.com/css?family=Pacifico&v1);
+@import url(http://fonts.googleapis.com/css?family=Irish+Grover);
 // ----------------------------------------------------------------------
 
 
@@ -35,13 +35,18 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	border: 0;
 	outline: 0;
 	vertical-align: baseline;
-	background: transparent;
+	background: transparent;	
 }
 
 body {
 	line-height: 1;
 	font-size: 100%;
 	-webkit-font-smoothing: antialiased;
+	// keeps webkit from resizing type, especially on the iPhone
+	// http://goo.gl/AOvM4
+	@media only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation : landscape), only screen and (max-device-width: 480px) and (orientation : landscape) {
+		-webkit-text-size-adjust: none;
+	}
 }
 
 article, aside, figure, footer, header, hgroup, nav, section {

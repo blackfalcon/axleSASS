@@ -12,7 +12,7 @@
 // Type defaults
 // * ------------------
 // only need to edit default font size and family, magical SASS takes care of the rest
-$font_size: 12;
+$font_size: 14;
 $em: $font_size;
 
 // $heading_1_font_size: 52;
@@ -26,13 +26,13 @@ $heading_3_font_size: ($font-size + 26);
 $line: $font_size * 1.5;
 $line_height: #{$line / $em}em;
 
-$web_font_alpha: #{'DigitaldreamFatRegular', Arial, sans-serif};
+$web_font_alpha: #{'Irish Grover', cursive};
 $web_font_bravo: #{'KomikaTitle-PaintRegular', Arial, sans-serif};
 $web_font_charlie: #{'ChivoRegular', Arial, sans-serif};
 $web_font_delta: #{'KomikaTitleWideRegular', Arial, sans-serif};
 
 $primary_font_family: #{verdana, sans-serif};
-$heading_font_family: $web_font_bravo;
+$heading_font_family: $web_font_alpha;
 
 
 

@@ -32,7 +32,7 @@
 	<section class="site_container">
 		
 		<header>
-			<h1>HEY!!! Awesome, you found my dongle!</h1>
+			<h1>Awesome, you found my dongle!!!</h1>
 			<h2>Crap, I was wondering where I left that.</h2>
 		</header>
 		<section>
